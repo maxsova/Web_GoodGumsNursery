@@ -1,0 +1,229 @@
+﻿<!--Asssessment 2 cse2icx by Max Sova (20224612), 2022-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Good Gums </title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Good Gums Plant Nursery">
+    <meta name="keywords" content="nursery, gardening supplies, plants for sale">
+    <meta name="author" content="20224612">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- header starts here including navigation links -->
+    <div class="header">
+        <div class="header_image">
+            <img src="images/GoodGums-logo.png" alt="GoodGumsLogo" class="responsive">
+        </div>
+        <h1 id="main_title">Native Plant Nursery for Every Australian Garden</h1>
+
+        <nav>
+
+            <ul id="topnav">
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="#"><b>Products</b></a>
+                    <ul><!--the following submenu will require additional coding to link to product lists (not part of this assessment)-->
+                        <li><a href="products.html">On Discount Sale</a></li>
+                        <li><a href="products.html">New Products</a></li>
+                        <li><a href="products.html">All Products</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="purchase.html">Purchase</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                    <ul>
+                        <li><a href="about.html#missionAndVision">Mission and Vision</a></li>
+                        <li><a href="about.html#history">History</a></li>
+                        <li><a href="about.html#staff">Staff</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </nav>
+
+    </div>
+
+    <!-- header finishes here -->
+    <main>
+        <section class="main_content">
+            <h2>Welcome to Good Gums!</h2>
+            <article id="main_column">
+                <h2>Our Plants</h2>
+                <p>Browse our range, choose regular, new, or on-sale items:</p>
+                <!-- main page content goes here in left column -->
+
+
+                <!--assign onclick event (tabs.js) to product selection tab-->
+                <button class="productButton" onclick="openTab(event,'ptabSale')">On Discount Sale</button>
+                <button class="productButton" onclick="openTab(event,'ptabNew')">New Products</button>
+                <button class="productButton" onclick="openTab(event,'ptabAll')">All Products</button>
+
+                <!--selectively displayed product lists in three tables below-->
+                <div id="ptabSale" class="ptabs" style="display:none">
+                    <h2>On Discount Sale</h2>
+                    <table id="saleT">
+                        <tr>
+                            <td><img src="images/Plants/Acacia%20pycnantha/shutterstock_1544034050_1.jpg" alt="Acacia pycnantha" style="width:80%"><br><b>Golden Wattle</b><br>A tree that grows to a height of 10m it delights with vibrant yellow flowers in spring. <br><b>$65.8</b></td>
+                            <td><img src="images/Plants/Grevillea%20alpina%20x%20rosmarinifolia/shutterstock_1463973167_1.jpg" alt="Grevillea alpina x rosmarinifolia" style="width:80%"><br><b>Grevillia Firecracker</b><br>This  easy  to  maintain  shrub  grows  to  a  height  of  0.5m  and  has colourful red and yellow flowers from autumn right through until spring <br><b>$30.95</b></td>
+                            <td><img src="images/Plants/Angophora%20costata/shutterstock_1595770927_1.jpg" alt="Angophora costata" style="width:80%"><br><b>Rusty Gum</b><br>This tree is best known for its colourful peeling bark. It grows up to 30m in height and has pretty white flowers. <br><b>$89.90</b></td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/Plants/Callistemon%20citrinus/shutterstock_1774816355_1.jpg" alt="Callistemon citrinus" style="width:80%"><br><b>Crimson Bottlebrush</b><br>This tough plant is great to use as hedging and displays wonderful red flowers from spring through to summer <br><b>$30.99</b></td>
+                            <td><img src="images/Plants/Telopea%20speciosissima/shutterstock_1268838721_1.jpg" alt="Telopea speciosissima" style="width:80%"><br><b>Waratah</b><br>This evergreen shrub grows to a height of 3m. It displays astounding red flowers throughout spring <br><b>$19.95</b></td>
+                            <td><img src="images/Plants/Syzygium%20smithii/shutterstock_1735075418_1.jpg" alt="Syzygium smithii" style="width:80%"><br><b>Lilly Pilly</b><br>Growing to a height of 3-5m grown together these plants can be used for hedging. It has pretty flowers in the summer and fruits in winter. <br><b>$45.50</b></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div id="ptabNew" class="ptabs" style="display:none">
+                    <h2>New Products</h2>
+                    <table id="newT">
+                        <tr>
+                            <td><img src="images/Plants/Eucalyptus%20caesia/shutterstock_144993766_1.jpg" alt="Eucalyptus caesia" style="width:90%"><br><b>Silver Princess Gum</b><br>A native of Western Australia this gum grows to between 6-8m and can live for up to 150 years. <br><b>$80.95</b></td>
+                            <td><img src="images/Plants/Corymbia%20ficifolia/shutterstock_1611871573_1.jpg" alt="Corymbia ficifolia" style="width:90%"><br><b>Red Flowering Gum</b><br>This flowering gum will grow to a size of around 3-4 m and produces stunning red flowers in late spring <br><b>$120.00</b></td>
+                            <td><img src="images/Plants/Hardenbergia%20violacea/shutterstock_1675721635_1.jpg" alt="Hardenbergia violacea" style="width:90%"><br><b>Happy Wanderer</b><br>With its pretty purple flowers and quick rate of expansion this climbing plant is ideal for covering pergolas, fences, and trellises. <br><b>$21.50</b></td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/Plants/Correa%20federation%20bell%20x%20mannii/shutterstock_1716199645_1.jpg" alt="Correa federation bell x mannii" style="width:90%"><br><b>Canberra Bells</b><br>This pretty shrub grows to a height of 1m and produces lovely red and white flowers in autumn. <br><b>$24.50</b></td>
+                            <td><img src="images/Plants/Boronia%20serrulata/shutterstock_1185578461_1.jpg" alt="Boronia serrulata" style="width:90%"><br><b>Rose Boronia</b><br>This shrub will grow up to 1 m in height and does best in well drained soils. Pretty pink flowers are produced during the spring. <br><b>$25.50</b></td>
+                            <td><img src="images/Plants/Grevillia%20robusta/shutterstock_514124533_1.jpg" alt="Grevillia robusta" style="width:90%"><br><b>Silky Oak</b><br>This  graceful  tree  can  grow  to  a  height  of  between  10-30m  and produces wonderful orange and gold flowers in spring <br><b>$45.00</b></td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/Plants/Anigozanthos%20flavidus/shutterstock_1788084995_1.jpg" alt="Anigozanthos flavidus" style="width:80%"><br><b>Tall Kangaroo Paw</b><br>Growing up to a meter long this hardy plant flowers from late spring all through summer <br><b>$13.50</b></td>
+                            <td><img src="images/Plants/Eucalyptus%20pauciflora/shutterstock_1114744187_1.jpg" alt="Eucalyptus pauciflora" style="width:80%"><br><b>Snow Gum</b><br>Native to eastern Australia the Snow Gum grows to a height of 5-7m and will put up with some frost <br><b>$55.50</b></td>
+                            <td><img src="images/Plants/Poa%20labillardierei/shutterstock_374910508_1.jpg" alt="Poa labillardierei" style="width:80%"><br><b>Poa Grass</b><br>Poa  labillardierei  is  a  native  grass  that  can  grow  to  a  height  of approximately  120cm  and  looks  especially  attractive  around  water features. <br><b>$19.95</b></td>
+                        </tr>
+                    </table>
+
+                </div>
+                <div id="ptabAll" class="ptabs tab">
+                    <h2>All Products</h2>
+                    <table id="allT">
+                        <tr>
+                            <td><img src="images/Plants/Acacia%20pycnantha/shutterstock_1544034050_1.jpg" alt="Acacia pycnantha" style="width:80%"><br><b>Golden Wattle</b><br>A tree that grows to a height of 10m it delights with vibrant yellow flowers in spring. <br><b>$65.8</b></td>
+                            <td><img src="images/Plants/Grevillea%20alpina%20x%20rosmarinifolia/shutterstock_1463973167_1.jpg" alt="Grevillea alpina           x rosmarinifolia" style="width:80%"><br><b>Grevillia Firecracker</b><br>This  easy  to  maintain  shrub  grows  to  a  height  of  0.5m  and  has colourful red and yellow flowers from autumn right through until spring <br><b>$30.95</b></td>
+                            <td><img src="images/Plants/Angophora%20costata/shutterstock_1595770927_1.jpg" alt="Angophora costata" style="width:80%"><br><b>Rusty Gum</b><br>This tree is best known for its colourful peeling bark. It grows up to 30m in height and has pretty white flowers. <br><b>$89.90</b></td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/Plants/Correa%20federation%20bell%20x%20mannii/shutterstock_1716199645_1.jpg" alt="Correa federation bell x mannii" style="width:90%"><br><b>Canberra Bells</b><br>This pretty shrub grows to a height of 1m and produces lovely red and white flowers in autumn. <br><b>$24.50</b></td>
+                            <td><img src="images/Plants/Boronia%20serrulata/shutterstock_1185578461_1.jpg" alt="Boronia serrulata" style="width:90%"><br><b>Rose Boronia</b><br>This shrub will grow up to 1 m in height and does best in well drained soils. Pretty pink flowers are produced during the spring. <br><b>$25.50</b></td>
+                            <td><img src="images/Plants/Grevillia%20robusta/shutterstock_514124533_1.jpg" alt="Grevillia robusta" style="width:90%"><br><b>Silky Oak</b><br>This  graceful  tree  can  grow  to  a  height  of  between  10-30m  and produces wonderful orange and gold flowers in spring <br><b>$45.00</b></td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/Plants/Anigozanthos%20flavidus/shutterstock_1788084995_1.jpg" alt="Anigozanthos flavidus" style="width:80%"><br><b>Tall Kangaroo Paw</b><br>Growing up to a meter long this hardy plant flowers from late spring all through summer <br><b>$13.50</b></td>
+                            <td><img src="images/Plants/Eucalyptus%20pauciflora/shutterstock_1114744187_1.jpg" alt="Eucalyptus pauciflora" style="width:80%"><br><b>Snow Gum</b><br>Native to eastern Australia the Snow Gum grows to a height of 5-7m and will put up with some frost <br><b>$55.50</b></td>
+                            <td><img src="images/Plants/Poa%20labillardierei/shutterstock_374910508_1.jpg" alt="Poa labillardierei" style="width:80%"><br><b>Poa Grass</b><br>Poa  labillardierei  is  a  native  grass  that  can  grow  to  a  height  of approximately  120cm  and  looks  especially  attractive  around  water features. <br><b>$19.95</b></td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/Plants/Hardenbergia%20violacea/shutterstock_1675721635_1.jpg" alt="Hardenbergia violacea" style="width:90%"><br><b>Happy Wanderer</b><br>With its pretty purple flowers and quick rate of expansion this climbing plant is ideal for covering pergolas, fences, and trellises. <br><b>$21.50</b></td>
+                            <td><img src="images/Plants/Eucalyptus%20caesia/shutterstock_144993766_1.jpg" alt="Eucalyptus caesia" style="width:90%"><br><b>Silver Princess Gum</b><br>A native of Western Australia this gum grows to between 6-8m and can live for up to 150 years. <br><b>$80.95</b></td>
+                            <td><img src="images/Plants/Corymbia%20ficifolia/shutterstock_1611871573_1.jpg" alt="Corymbia ficifolia" style="width:90%"><br><b>Red Flowering Gum</b><br>This flowering gum will grow to a size of around 3-4 m and produces stunning red flowers in late spring <br><b>$120.00</b></td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/Plants/Callistemon%20citrinus/shutterstock_1774816355_1.jpg" alt="Callistemon citrinus" style="width:80%"><br><b>Crimson Bottlebrush</b><br>This tough plant is great to use as hedging and displays wonderful red flowers from spring through to summer <br><b>$30.99</b></td>
+                            <td><img src="images/Plants/Telopea%20speciosissima/shutterstock_1268838721_1.jpg" alt="Telopea speciosissima" style="width:80%"><br><b>Waratah</b><br>This evergreen shrub grows to a height of 3m. It displays astounding red flowers throughout spring <br><b>$19.95</b></td>
+                            <td><img src="images/Plants/Syzygium%20smithii/shutterstock_1735075418_1.jpg" alt="Syzygium smithii" style="width:80%"><br><b>Lilly Pilly</b><br>Growing to a height of 3-5m grown together these plants can be used for hedging. It has pretty flowers in the summer and fruits in winter. <br><b>$45.50</b></td>
+                        </tr>
+                    </table>
+                </div>
+
+            </article>
+
+            <!--side bar -->
+            <article id="side_column">
+                <img src="images/Plants/Correa%20federation%20bell%20x%20mannii/shutterstock_1711478590_1.jpg" alt="Correa federation bell" style="width:100%">
+
+                <h2 style="clear:both; text-align: center; width: 100%">Find us here:</h2>
+                <div class="address_row">
+                    <div class="symbol_column">
+                        <span id="symbolHome" style="width:30%">&#127969;</span>
+                    </div>
+                    <div class="address_column">
+                        <span id="address" style="width:70%">13 Redgum Grove<br>Springvale Victoria&nbsp;3171<br><br></span>
+                    </div>
+                </div>
+                <div class="address_row">
+                    <div class="symbol_column">
+                        <span id="symbolPhone" style="width:30%">&#128222;</span>
+                    </div>
+                    <div class="address_column">
+                        <span id="phone" style="width:70%">(03)&nbsp;9555&nbsp;5555<br><br></span>
+                    </div>
+                </div>
+
+                <div class="sidenav">
+                    <nav>
+                        <a href="#">&#128386;&nbsp;&nbsp;Contact</a> <!--contact link will require a response page that is not part of current assignment-->
+                    </nav>
+                </div>
+
+            </article>
+        </section>
+        <!-- two columns finish here -->
+
+        <section class="Picks Of the Week">
+
+            <h2 style="clear:both; text-align: center; width: 100%">Picks Of the Week</h2>
+
+            <div class="row">
+                <div class="column">
+                    <img src="images/Plants/Corymbia%20ficifolia/shutterstock_1308004495_1.jpg" alt="Corymbia ficifolia" style="width:100%">
+                    <div class="caption">Corymbia ficifolia</div>
+                    <div class="price">$60.95</div>
+                </div>
+                <div class="column">
+                    <img src="images/Plants/Anigozanthos%20flavidus/shutterstock_1788084995_1.jpg" alt="Anigozanthos flavidus" style="width:100%">
+                    <div class="caption">Anigozanthos flavidus</div>
+                    <div class="price">$14.95</div>
+                </div>
+                <div class="column">
+                    <img src="images/Plants/Grevillia%20robusta/shutterstock_514124533_1.jpg" alt="Grevillia robusta" style="width:100%">
+                    <div class="caption">Grevillia robusta</div>
+                    <div class="price">$75.95</div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="column">
+                    <img src="images/Plants/Callistemon%20citrinus/shutterstock_81971158_1.jpg" alt="Callistemon citrinus" style="width:100%">
+                    <div class="caption">Callistemon citrinus</div>
+                    <div class="price">$29.95</div>
+                </div>
+                <div class="column">
+                    <img src="images/Plants/Boronia%20serrulata/shutterstock_1185578461_1.jpg" alt="Boronia serrulata" style="width:100%">
+                    <div class="caption">Boronia serrulata</div>
+                    <div class="price">$35.50</div>
+                </div>
+                <div class="column">
+                    <img src="images/Plants/Telopea%20speciosissima/shutterstock_639385780_1.jpg" alt="Telopea speciosissima" style="width:100%">
+                    <div class="caption">Telopea speciosissima</div>
+                    <div class="price">$40.95</div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <div class="footer">
+        <p>
+            &copy; 2022, Student Id:20224612<br>
+            This website is created for educational purposes only. It contains no references to real people or businesses.<br>
+        </p>
+        <a href="https://jigsaw.w3.org/css-validator" target="_blank">
+            <img src="images/CSS_Validation_logo.png" style="width:10%" alt="CSS Validation link" />
+        </a>
+        <a href="https://validator.w3.org/" target="_blank">
+            <img src="images/HTML5_Logo_64.png" style="width:4%" alt="HTML Validation link" />
+        </a>
+    </div>
+    <script src="tabs.js"></script>
+</body>
+</html>
+
+

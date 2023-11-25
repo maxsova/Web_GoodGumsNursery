@@ -1,0 +1,5 @@
+Images used in this assignment have been supplied as part of the course learning materials.
+
+HTML5 validation badge was sourced from https://www.w3.org/html/logo/
+
+All imagery used under Creative Commomns Licence.

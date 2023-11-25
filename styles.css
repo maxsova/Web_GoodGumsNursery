@@ -1,0 +1,382 @@
+﻿/*Asssessment 2 cse2icx by Max Sova (20224612), 2022*/
+body {
+    background-color: #ffd48f;
+    border-color: #079178;
+    border-width: 10px;
+    border-style: solid;
+    padding: 1px;
+    margin: 0;
+}
+
+/* scaling header image */
+.header_image {
+    width: 25%;
+    float: left;
+    clear: both;
+    margin-top: 12px;
+    margin-left: 10px;
+}
+
+.header {
+    background-color: #079178;
+    color: #FFCB78;
+    width: 100%;
+    margin: 0;
+   
+}
+
+.footer {
+    background-color: #079178;
+    color: #ffd48f;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    font-size:1.2vw;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 1.4vw;
+}
+nav ul {
+    background: #fc6b77;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    
+}
+
+nav li {
+   
+    background: #fc6b77;
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+nav li a {
+     color: #ffdea8;
+}
+
+nav li a:hover {
+     color: #fc6b77;
+}
+
+nav li:hover {
+     background: #FFD48F;
+     cursor: pointer;
+        
+}
+
+nav ul li ul {
+    background: #fc6b77;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+}
+
+nav ul li:hover > ul,
+nav ul li ul:hover {
+     visibility: visible;
+     opacity: 1;
+     display: block;
+      
+}
+
+nav ul li ul li {
+     clear: both;
+     width: 100%;
+}
+
+nav ::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* remove header default margin to eliminate gap above the header */
+h1 {
+    margin-top: 0px;
+}
+
+#main_title {
+    text-align: center;
+    font-family: "Bodoni MT", serif;
+    font-size: 5vw;
+    height: 12vw;
+}
+
+#secondary_title {
+    text-align: center;
+    font-family: "Bodoni MT", serif;
+    font-size: 2vw;
+    color: #FFCB60;
+ }
+
+h2, h3, h4, h5 {
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+main {
+    list-style-type: none;
+    display: block;
+    padding: 0.2vw;
+    margin-left: 20px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 1.4vw;
+    color: #5f2803;
+}
+
+.main_content {
+    width: 100%;
+   
+}
+
+#main_column {
+    float: left;
+    width: 78%;
+    margin-left: 0.3vw;
+    margin-right: 0.6vw;
+
+}
+
+#side_column {
+    float: left;
+    width: 20% ;
+    text-align: justify;
+    margin-right: 0.3vw;
+    margin-top: 0.8vw;
+ }
+
+/*  navigation links in side column*/
+.sidenav a {
+    display: block;
+    float: left;
+    width: 100%;
+    background-color: #fc6b77;
+    text-align: left;
+    color: #FFCB78;
+    text-decoration: none;
+    padding-left: 0.8vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+ 
+/* Change the link colour to red on hover */
+.sidenav a:hover {
+    background-color: #FFCB78;
+    width: 100%;
+    color: #fc6b6b;
+
+}
+
+/*  spacing lines in lists on index page */
+ul {
+    line-height: 150%;
+}
+
+/*  formatting table for About page  */
+#staffT {
+    width: 97%;
+    border: 1px solid #5f2803;
+    border-collapse: collapse;
+    padding: 10px;
+}
+#staffT tr, td {
+    text-align: center;
+    border: 1px solid #5f2803;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+/*Product page tabs*/
+#ptabAll,#ptabNew,#ptabSale {
+    width: 97%;
+    padding:0.2vw;
+}
+
+.productButton {
+    background-color: #fc6b77;
+    color: #ffdea8;
+    font-size: 1.4vw;
+    padding: 1vw;
+    border:hidden;
+}
+
+.productButton:hover {
+    background: #FFD48F;
+    cursor: pointer;
+    color: #fc6b77;
+}
+
+#saleT, #newT, #allT {
+    width: 100%;
+    border: 1px solid #5f2803;
+    border-collapse: collapse;
+    padding: 10px;
+    font-size: 1vw;
+}
+
+#saleT tr, td, #newT tr, td, #allT tr, td {
+    text-align: center;
+    border: 1px solid #5f2803;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+.active {
+    background-color: #ffd48f !important;
+    font-weight: bold !important;
+    color: #5f2803 !important;
+}
+
+
+/* format purchase form input fields */
+#purchaseForm label {
+     min-width: 150px;
+     display: inline-block;
+}
+#purchaseForm input {
+     border-radius: 3px;
+     padding: 2px;
+}
+
+#purchaseForm input[id=name], [id=phone], [id=email] {
+     width:300px;
+}
+
+#purchaseForm button {
+    width: 200px;
+    font-size: 110%;
+    border: 2px solid #fc6b6b;
+    border-radius: 10px;
+}
+
+    
+form button:hover {
+    width: 200px;
+    font-size: 110%;
+    border: 2px solid #fc6b6b;
+    border-radius: 10px;
+    background-color: #FFCB78;
+    color: #fc6b6b;
+}
+
+select {
+    border-radius: 3px;
+    padding: 2px;
+}
+
+/*purchase form selection "table" fields*/
+#qty1, #qty2, #qty3, #qty4, #qty5 {
+    text-align:center;
+    width: auto;
+}
+
+#productSelectform {
+    width: 95%;
+    border: 1px solid #FFCB78;
+}
+ 
+/* make images scalable */
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+.Picks Of the Week {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 30.5%;
+    padding: 0.5vw;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.symbol_column {
+    float: left;
+    padding: 5px;
+    font-size: 2vw;
+}
+.address_column {
+    float: left;
+    padding: 5px;
+    
+}
+
+.address_row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/*formatting response table*/
+#orderSummary, #orderDetails {
+    width: 95%;
+    font-size: 1.4vw;
+    border: solid 1px;
+    border-collapse: collapse;
+}
+/* clear overflow of the above content */
+main_content::after {
+    content: "";
+    display: table;
+    clear: both;
+    height: auto;
+}
+
+/* clear overflow of the above content */
+main::after {
+    content: "";
+    display: table;
+    clear: both;
+    height: auto;
+}
+
+/*formatting Picks of the week*/
+.caption {
+    font-style: italic;
+    padding: 5px;
+    text-align: center;
+    font-size: 80%;
+}
+
+.price {
+    font-family: 'Arial Rounded MT', Arial, sans-serif;
+    text-align: center;
+    font-size: 80%;
+}
+
+.footer {
+    padding:0.5vw;
+}
+
+ /* limit max font size for screens over 1000px wide*/
+@media screen and (min-width: 1000px) {
+    main {
+        font-size: 16px;
+    }
+
+    header {
+        font-size: 20px;
+    }
+
+    .sidenav {
+        font-size: 20px;
+    }
+}
